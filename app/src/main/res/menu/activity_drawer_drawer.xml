@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <group
+            android:id="@+id/group1"
+            android:checkableBehavior="single"
+            android:title="Options">
+
+            <item
+                android:id="@+id/nav_status"
+                android:title="Status" />
+            <item
+                android:id="@+id/nav_services"
+                android:title="Services" />
+            <item
+                android:id="@+id/nav_backups"
+                android:title="Backups" />
+            <item
+                android:id="@+id/nav_cron"
+                android:title="Cron" />
+            <item
+                android:id="@+id/nav_processes"
+                android:title="Processes" />
+        </group>
+        <group
+            android:id="@+id/group2"
+            android:title="Extra">
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_donate"
+                android:title="Donate" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout" />
+        </group>
+    </group>
+
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/about_Logo"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:contentDescription="@string/slmlogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/linuxbig" />
+
+            <TextView
+                android:id="@+id/about_Line_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/simple_linux_manager"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toEndOf="@+id/scrollView"
+                app:layout_constraintTop_toBottomOf="@+id/about_Logo"
+                app:layout_constraintVertical_bias="0.433"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="381dp" />
+
+            <TextView
+                android:id="@+id/about_Line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:orientation="horizontal" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Version: " />
+
+        <TextView
+            android:id="@+id/about_version_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:textAlignment="viewEnd" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

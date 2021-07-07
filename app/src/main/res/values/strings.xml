@@ -1,0 +1,470 @@
+<resources>
+    <string name="app_name">SLM mobile</string>
+    <string name="title_activity_drawer">drawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="slmlogo">SLMLogo</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="ip">IP</string>
+    <string name="password">Password</string>
+    <string name="port">Port</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="tap_to_update">Tap to check, Hold to update</string>
+    <string name="authorization_req">Authorization required!</string>
+    <string name="updates_available">updates available, Hold to update</string>
+    <string name="error">Error!</string>
+    <string name="checking...">Checking…</string>
+    <string name="warning">Warning!</string>
+    <string name="distro_warning_message">Couldn\'t detect distribution!
+        Please choose your distribution in settings.</string>
+    <string name="ok">OK</string>
+    <string name="Connecting">Connecting…</string>
+    <string name="Connected">Connected</string>
+    <string name="Connection_failed">Connection Failed!</string>
+    <string name="Connection_lost">Connection lost!</string>
+    <string name="twice_to_quit">Press twice to quit</string>
+    <string name="soon">SOON</string>
+    <string name="authorised">Authorised</string>
+    <string name="authorise">Authorise</string>
+    <string name="enter">Enter</string>
+    <string name="uname">Kernel</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="hostname">Hostname</string>
+    <string name="uptime">Uptime</string>
+    <string name="cpu">CPU</string>
+    <string name="cpu_usage">CPU Usage</string>
+    <string name="ram">RAM</string>
+    <string name="os">OS</string>
+    <string name="virtualized">Virtualized</string>
+    <string name="updates">Updates</string>
+    <string name="remember_password">  Remember Password</string>
+    <string name="simple_linux_manager">Simple Linux Manager</string>
+    <string name="legal">Simple Linux Manager is a tool for managing common Linux server services, such as FTP, NFS, Samba, DNS, KVM, Docker as well as maintaining the server itself (backups, managing users etc.).</string>
+    <string name="simple_linux_manager_about"><h2>Some legal stuff</h2><br><p>:-Selling app in any way is prohibited without appropriate agreement of Authors.</p></br><br><p>-Developers take no responsibility over the damage done to user\'s system by this app.</p></br><br><p>-SLM doesn\'t send any data but one needed by SSH connection to client\'s system.</p></br><br><p>Material icons created by Material</p></br></string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="usure">Are you sure?</string>
+    <string name="pid_s">PID(s)</string>
+    <string name="port_s">Port(s)</string>
+    <string name="module">Module</string>
+    <string name="set_hostname">Set Hostname</string>
+    <string name="delete">Delete?</string>
+
+    <string-array name="themes">
+        <item>Light Gray</item>
+        <item>Light Red</item>
+        <item>Light Blue</item>
+        <item>Black White</item>
+    </string-array>
+
+    <string-array name="vms_options_running">
+        <item>Stop</item>
+        <item>Restart</item>
+        <item>Destroy</item>
+    </string-array>
+
+    <string-array name="vms_options_not_running">
+        <item>Start</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+
+    <string-array name="pref_choose_distro">
+        <item>Fedora</item>
+        <item>SUSE</item>
+        <item>Arch</item>
+        <item>CentOS/RedHat</item>
+        <item>Ubuntu</item>
+        <item>Debian</item>
+    </string-array>
+
+    <string-array name="pref_choose_distro_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="backup_manager_filetype">
+        <item>tar</item>
+        <item>tar.gz</item>
+        <item>tar.bz2</item>
+        <item>tar.xz</item>
+        <item>tar.lzma</item>
+        <item>dar</item>
+        <item>zip</item>
+    </string-array>
+    <!-- END Strings related to Settings -->
+
+    <string-array name="power_actions">
+        <item>Reboot</item>
+        <item>Shutdown</item>
+    </string-array>
+
+
+    <string-array name="services_options_uninstalled">
+        <item>Install</item>
+    </string-array>
+
+    <string-array name="services_options_not_running">
+        <item>Start</item>
+        <item>Config</item>
+        <item>Uninstall</item>
+    </string-array>
+
+    <string-array name="services_options_running">
+        <item>Stop</item>
+        <item>Restart</item>
+        <item>Config</item>
+    </string-array>
+
+
+    <string-array name="samba_options_checkable">
+        <item>browseable</item>
+        <item>browsable</item>
+        <item>writeable</item>
+        <item>writable</item>
+        <item>public</item>
+        <item>read only</item>
+        <item>read ok</item>
+        <item>guest ok</item>
+        <item>printable</item>
+        <item>follow symlinks</item>
+        <item>wide links</item>
+        <item>guest only</item>
+    </string-array>
+
+    <string-array name="samba_options_writeable">
+        <item>valid users</item>
+        <item>comment</item>
+        <item>path</item>
+        <item>hosts allow</item>
+        <item>hosts deny</item>
+        <item>guest account</item>
+        <item>create mask</item>
+        <item>directory mask</item>
+        <item>root preexec</item>
+        <item>root postexec</item>
+        <item>printer driver</item>
+    </string-array>
+
+    <string-array name="samba_spinner">
+        <item>browseable</item>
+        <item>writeable</item>
+        <item>public</item>
+        <item>read only</item>
+        <item>read ok</item>
+        <item>guest ok</item>
+        <item>printable</item>
+        <item>follow symlinks</item>
+        <item>wide links</item>
+        <item>guest only</item>
+        <item>valid users</item>
+        <item>comment</item>
+        <item>path</item>
+        <item>hosts allow</item>
+        <item>hosts deny</item>
+        <item>guest account</item>
+        <item>create mask</item>
+        <item>directory mask</item>
+        <item>root preexec</item>
+        <item>root postexec</item>
+        <item>printer driver</item>
+    </string-array>
+
+
+    <string-array name="check_updates">
+        <item>dnf check-update -q | awk \'NF\' | wc -l</item>                                                                                               <!--Fedora-->
+        <item>zypper list-updates | awk \'BEGIN{ found=0} /----/{found=1}  {if (found) print }\' | tail -n +2 | grep -v \'/var/mail/root\' | wc -l</item>   <!--Suse-->
+        <item>pacman -Qu | wc -l</item>                                                                                                                     <!--Arch-->
+        <item>yum check-update -q | awk \'NF\' | wc -l</item>                                                                                               <!--Centos/redhat-->
+        <item>(apt update 2>&amp;1 | grep -v ^$ | grep -v ^WARNING) 2>&amp;1>/dev/null &amp;&amp; apt list --upgradable 2>&amp;1 | grep -v ^$ | grep -v ^WARNING | grep -v Listing | wc -l | tail -n1</item>                                                                          <!--Ubuntu-->
+        <item>(apt update 2>&amp;1 | grep -v ^$ | grep -v ^WARNING) 2>&amp;1>/dev/null &amp;&amp; apt list --upgradable 2>&amp;1 | grep -v ^$ | grep -v ^WARNING | grep -v Listing | wc -l | tail -n1</item>                                                                          <!--Debian-->
+    </string-array>
+
+    <string-array name="update_commands">
+        <item>dnf -y update</item>          <!--Fedora-->
+        <item>zypper update -y</item>       <!--Suse-->
+        <item>pacman -Syu --noconfirm</item><!--Arch-->
+        <item>yum -y update</item>          <!--Centos/redhat-->
+        <item>apt -y upgrade</item>         <!--Ubuntu-->
+        <item>apt -y upgrade</item>         <!--Debian-->
+    </string-array>
+
+
+    <string-array name="apache_install_commands">
+        <item>dnf install -y httpd php php-common</item>                        <!--Fedora-->
+        <item>zypper install -y apache2 php7 php7-pear apache2-mod_php7</item>  <!--Suse-->
+        <item>pacman -S apache php-apache --noconfirm</item>                    <!--Arch-->
+        <item>yum install -y httpd php php-common</item>                        <!--Centos/redhat-->
+        <item>apt -y install apache2</item>                                     <!--Ubuntu-->
+        <item>apt -y install apache2</item>                                     <!--Debian-->
+    </string-array>
+
+    <string-array name="apache_uninstall_commands">
+        <item>dnf remove -y httpd php php-common</item>                        <!--Fedora-->
+        <item>zypper remove -y apache2 php7 php7-pear apache2-mod_php7</item>  <!--Suse-->
+        <item>pacman -R apache php-apache --noconfirm</item>                    <!--Arch-->
+        <item>yum remove -y httpd php php-common</item>                        <!--Centos/redhat-->
+        <item>apt -y remove apache2</item>                                     <!--Ubuntu-->
+        <item>apt -y remove apache2</item>                                     <!--Debian-->
+    </string-array>
+
+
+    <string-array name="docker_install_commands">
+        <item>dnf install -y docker</item>          <!--Fedora-->
+        <item>zypper install -y docker</item>       <!--Suse-->
+        <item>pacman -S docker --noconfirm</item>   <!--Arch-->
+        <item>yum install -y docker</item>          <!--Centos/redhat-->
+        <item>apt -y install docker</item>          <!--Ubuntu-->
+        <item>apt -y install docker</item>          <!--Debian-->
+    </string-array>
+
+    <string-array name="docker_uninstall_commands">
+        <item>dnf remove -y docker</item>           <!--Fedora-->
+        <item>zypper remove -y docker</item>        <!--Suse-->
+        <item>pacman -R docker --noconfirm</item>   <!--Arch-->
+        <item>yum remove -y docker</item>           <!--Centos/redhat-->
+        <item>apt -y remove docker</item>           <!--Ubuntu-->
+        <item>apt -y remove docker</item>           <!--Debian-->
+    </string-array>
+
+
+    <string-array name="ftp_install_commands">
+        <item>dnf install -y vsftpd</item>          <!--Fedora-->
+        <item>zypper install -y vsftpd</item>       <!--Suse-->
+        <item>pacman -S vsftpd --noconfirm</item>   <!--Arch-->
+        <item>yum install -y vsftpd</item>          <!--Centos/redhat-->
+        <item>apt -y install vsftpd</item>          <!--Ubuntu-->
+        <item>apt -y install vsftpd</item>          <!--Debian-->
+    </string-array>
+
+    <string-array name="ftp_uninstall_commands">
+        <item>dnf remove -y vsftpd</item>           <!--Fedora-->
+        <item>zypper remove -y vsftpd</item>        <!--Suse-->
+        <item>pacman -R vsftpd --noconfirm</item>   <!--Arch-->
+        <item>yum remove -y vsftpd</item>           <!--Centos/redhat-->
+        <item>apt -y remove vsftpd</item>           <!--Ubuntu-->
+        <item>apt -y remove vsftpd</item>           <!--Debian-->
+    </string-array>
+
+
+    <string-array name="samba_install_commands">
+        <item>dnf install -y samba</item>          <!--Fedora-->
+        <item>zypper install -y samba</item>       <!--Suse-->
+        <item>pacman -S samba --noconfirm</item>   <!--Arch-->
+        <item>yum install -y samba</item>          <!--Centos/redhat-->
+        <item>apt -y install samba</item>          <!--Ubuntu-->
+        <item>apt -y install samba</item>          <!--Debian-->
+    </string-array>
+
+    <string-array name="samba_uninstall_commands">
+        <item>dnf remove -y samba</item>           <!--Fedora-->
+        <item>zypper remove -y samba</item>        <!--Suse-->
+        <item>pacman -R samba --noconfirm</item>   <!--Arch-->
+        <item>yum remove -y samba</item>           <!--Centos/redhat-->
+        <item>apt -y remove samba</item>           <!--Ubuntu-->
+        <item>apt -y remove samba</item>           <!--Debian-->
+    </string-array>
+
+
+    <string-array name="nfs_install_commands">
+        <item>dnf install -y nfs-utils</item>          <!--Fedora-->
+        <item>zypper install -y nfs-kernel-server</item>       <!--Suse-->
+        <item>pacman -S nfs-utils --noconfirm</item>   <!--Arch-->
+        <item>yum install -y nfs-utils</item>          <!--Centos/redhat-->
+        <item>apt -y install nfs-server</item>          <!--Ubuntu-->
+        <item>apt -y install nfs-kernel-server</item>          <!--Debian-->
+    </string-array>
+
+    <string-array name="nfs_uninstall_commands">
+        <item>dnf remove -y nfs-utils</item>           <!--Fedora-->
+        <item>zypper remove -y nfs-kernel-server</item>        <!--Suse-->
+        <item>pacman -R nfs-utils --noconfirm</item>   <!--Arch-->
+        <item>yum remove -y nfs-utils</item>           <!--Centos/redhat-->
+        <item>apt -y remove nfs-server</item>           <!--Ubuntu-->
+        <item>apt -y remove nfs-kernel-server</item>           <!--Debian-->
+    </string-array>
+
+
+    <string-array name="libvirt_install_commands">
+        <item>dnf group install --with-optional -y virtualization</item>          <!--Fedora-->
+        <item>zypper install -y -t pattern kvm_tools kvm_server</item>       <!--Suse-->
+        <item>pacman -S libvirt qemu --noconfirm</item>   <!--Arch-->
+        <item>yum group install --with-optional -y virtualization</item>          <!--Centos/redhat-->
+        <item>apt -y install qemu-kvm libvirt-clients libvirt-daemon-system</item>          <!--Ubuntu-->
+        <item>apt -y install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin</item>          <!--Debian-->
+    </string-array>
+
+    <string-array name="libvirt_uninstall_commands">
+        <item>dnf group remove --with-optional -y virtualization</item>          <!--Fedora-->
+        <item>zypper remove -y -t pattern kvm_tools kvm_server</item>       <!--Suse-->
+        <item>pacman -R libvirt qemu --noconfirm</item>   <!--Arch-->
+        <item>yum group remove --with-optional -y virtualization</item>          <!--Centos/redhat-->
+        <item>apt -y remove qemu-kvm libvirt-clients libvirt-daemon-system</item>          <!--Ubuntu-->
+        <item>apt -y remove qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin</item>          <!--Debian-->
+    </string-array>
+
+
+    <string-array name="sql_install_commands">
+        <item>dnf install -y mysql-server</item>          <!--Fedora-->
+        <item>zypper install -y mysql-community-server</item>       <!--Suse-->
+        <item>pacman -S mysql --noconfirm</item>   <!--Arch-->
+        <item>yum install -y mysql-server</item>          <!--Centos/redhat-->
+        <item>export DEBIAN_FRONTEND=noninteractive; apt -y install mysql-server</item>          <!--Ubuntu-->
+        <item>export DEBIAN_FRONTEND=noninteractive; apt -y install mysql-server</item>          <!--Debian-->
+    </string-array>
+
+    <string-array name="sql_uninstall_commands">
+        <item>dnf remove -y mysql-server</item>          <!--Fedora-->
+        <item>zypper remove -y mysql-community-server</item>       <!--Suse-->
+        <item>pacman -R mysql --noconfirm</item>   <!--Arch-->
+        <item>yum remove -y mysql-server</item>          <!--Centos/redhat-->
+        <item>export DEBIAN_FRONTEND=noninteractive; apt -y remove mysql-server</item>          <!--Ubuntu-->
+        <item>export DEBIAN_FRONTEND=noninteractive; apt -y remove mysql-server</item>          <!--Debian-->
+    </string-array>
+
+
+    <string-array name="libvirt_names">
+        <item>libvirtd</item><!--Fedora-->
+        <item>libvirtd</item><!--Suse-->
+        <item>libvirtd</item><!--Arch-->
+        <item>libvirtd</item><!--Centos/redhat-->
+        <item>libvirtd</item><!--Ubuntu-->
+        <item>libvirtd</item><!--Debian-->
+    </string-array>
+
+    <string-array name="libvirt_pids">
+        <item>libvirtd</item><!--Fedora-->
+        <item>libvirtd</item><!--Suse-->
+        <item>libvirtd</item><!--Arch-->
+        <item>libvirtd</item><!--Centos/redhat-->
+        <item>libvirtd</item><!--Ubuntu-->
+        <item>libvirtd</item><!--Debian-->
+    </string-array>
+
+    <string-array name="nfs_names">
+        <item>nfs-server</item><!--Fedora-->
+        <item>nfsserver</item><!--Suse-->
+        <item>nfs-server</item><!--Arch-->
+        <item>nfs-server</item><!--Centos/redhat-->
+        <item>nfs-server</item><!--Ubuntu-->
+        <item>nfs-server</item><!--Debian-->
+    </string-array>
+
+    <string-array name="nfs_pids">
+        <item>nfsd</item><!--Fedora-->
+        <item>nfsd</item><!--Suse-->
+        <item>nfsd</item><!--Arch-->
+        <item>nfsd</item><!--Centos/redhat-->
+        <item>nfsd</item><!--Ubuntu-->
+        <item>nfsd</item><!--Debian-->
+    </string-array>
+
+    <string-array name="docker_names">
+        <item>docker</item><!--Fedora-->
+        <item>docker</item><!--Suse-->
+        <item>docker</item><!--Arch-->
+        <item>docker</item><!--Centos/redhat-->
+        <item>docker</item><!--Ubuntu-->
+        <item>docker</item><!--Debian-->
+    </string-array>
+
+    <string-array name="docker_pids">
+        <item>docker</item><!--Fedora-->
+        <item>docker</item><!--Suse-->
+        <item>docker</item><!--Arch-->
+        <item>docker</item><!--Centos/redhat-->
+        <item>docker</item><!--Ubuntu-->
+        <item>docker</item><!--Debian-->
+    </string-array>
+
+    <string-array name="ftp_names">
+        <item>vsftpd</item><!--Fedora-->
+        <item>vsftpd</item><!--Suse-->
+        <item>vsftpd</item><!--Arch-->
+        <item>vsftpd</item><!--Centos/redhat-->
+        <item>vsftpd</item><!--Ubuntu-->
+        <item>vsftpd</item><!--Debian-->
+    </string-array>
+
+    <string-array name="ftp_pids">
+        <item>vsftpd</item><!--Fedora-->
+        <item>vsftpd</item><!--Suse-->
+        <item>vsftpd</item><!--Arch-->
+        <item>vsftpd</item><!--Centos/redhat-->
+        <item>vsftpd</item><!--Ubuntu-->
+        <item>vsftpd</item><!--Debian-->
+    </string-array>
+
+
+    <string-array name="samba_names">
+        <item>smb</item><!--Fedora-->
+        <item>smb</item><!--Suse-->
+        <item>smb</item><!--Arch-->
+        <item>smb</item><!--Centos/redhat-->
+        <item>smbd</item><!--Ubuntu-->
+        <item>smbd</item><!--Debian-->
+    </string-array>
+
+    <string-array name="samba_pids">
+        <item>smbd</item><!--Fedora-->
+        <item>smbd</item><!--Suse-->
+        <item>smbd</item><!--Arch-->
+        <item>smbd</item><!--Centos/redhat-->
+        <item>smbd</item><!--Ubuntu-->
+        <item>smbd</item><!--Debian-->
+    </string-array>
+
+    <string-array name="apache_names">
+        <item>httpd</item><!--Fedora-->
+        <item>apache2</item><!--Suse-->
+        <item>httpd</item><!--Arch-->
+        <item>httpd</item><!--Centos/redhat-->
+        <item>apache2</item><!--Ubuntu-->
+        <item>apache2</item><!--Debian-->
+    </string-array>
+
+    <string-array name="apache_pids">
+        <item>httpd</item><!--Fedora-->
+        <item>apache2</item><!--Suse-->
+        <item>httpd</item><!--Arch-->
+        <item>httpd</item><!--Centos/redhat-->
+        <item>apache2</item><!--Ubuntu-->
+        <item>apache2</item><!--Debian-->
+    </string-array>
+
+    <string-array name="sql_names">
+        <item>mariadb</item><!--Fedora-->
+        <item>mysql</item><!--Suse-->
+        <item>mysqld</item><!--Arch-->
+        <item>mariadb-server</item><!--Centos/redhat-->
+        <item>mysqld</item><!--Ubuntu-->
+        <item>mysql</item><!--Debian-->
+    </string-array>
+
+    <string-array name="sql_pids">
+        <item>mysqld</item><!--Fedora-->
+        <item>mysql</item><!--Suse-->
+        <item>mysql</item><!--Arch-->
+        <item>mysqld</item><!--Centos/redhat-->
+        <item>mysql</item><!--Ubuntu-->
+        <item>mysql</item><!--Debian-->
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_backups">BackupsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>

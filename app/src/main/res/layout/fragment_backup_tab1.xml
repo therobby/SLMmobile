@@ -1,0 +1,201 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karel.slmmobile.BackupTab1">
+
+    <TextView
+        android:id="@+id/backup_tab1_destination_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Archive directory"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/backup_tab1_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_destination_title" />
+
+    <EditText
+        android:id="@+id/backup_tab1_filenameprefix"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_filenameprefix_title" />
+
+    <TextView
+        android:id="@+id/backup_tab1_filenameprefix_title"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="File name prefix"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_destination" />
+
+
+    <TextView
+        android:id="@+id/backup_tab1_format_title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Name format"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_filenameprefix" />
+
+    <RadioGroup
+        android:id="@+id/backup_tab1_format"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_format_title">
+
+        <RadioButton
+            android:id="@+id/backup_tab1_format_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Long"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="645dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <RadioButton
+            android:id="@+id/backup_tab1_format_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Short"
+            android:textColor="?android:attr/textColorPrimary" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/backup_tab1_master_title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Master frequency"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_format" />
+
+    <RadioGroup
+        android:id="@+id/backup_tab1_master"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_master_title">
+
+        <RadioButton
+            android:id="@+id/backup_tab1_master_weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weekly"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="645dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <RadioButton
+            android:id="@+id/backup_tab1_master_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Monthly"
+            android:textColor="?android:attr/textColorPrimary" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/backup_tab1_incremental_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Incremental frequency"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_master" />
+
+    <RadioGroup
+        android:id="@+id/backup_tab1_incremental"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_incremental_title">
+
+        <RadioButton
+            android:id="@+id/backup_tab1_incremental_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daily"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="645dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <RadioButton
+            android:id="@+id/backup_tab1_incremental_hourly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hourly"
+            android:textColor="?android:attr/textColorPrimary" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/backup_tab1_spinner_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/backup_manager_filetype"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_file_title" />
+
+    <TextView
+        android:id="@+id/backup_tab1_file_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="File type"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backup_tab1_incremental" />
+
+
+</android.support.constraint.ConstraintLayout>

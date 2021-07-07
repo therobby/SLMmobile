@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karel.slmmobile.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="233dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/slmlogo"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Login_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/linuxbig" />
+
+    <Button
+        android:id="@+id/Login_Button"
+        android:layout_width="368dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onLoginClicked"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="Username"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/Login_hostname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Login_hostname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:digits="0123456789."
+        android:hint="Hostname"
+        android:inputType="number|phone"
+        android:maxLength="15"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/Login_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/Login_port"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Login_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="Port"
+        android:inputType="number|phone"
+        android:maxLength="5"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/Login_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

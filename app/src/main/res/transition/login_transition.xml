@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fade
+        android:duration="250"
+        android:fadingMode="fade_out"/>
+
+    <changeBounds/>
+
+    <!--<changeImageTransform
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:startDelay="800">
+        <targets>
+            <target android:targetId="@+id/imageView" />
+        </targets>
+    </changeImageTransform>
+
+
+    <slide>
+        <targets>
+            <target android:targetId="@+id/Login_Button"/>
+        </targets>
+    </slide>
+
+    <changeBounds>
+        <targets>
+            <target android:targetId="@+id/Login_port" />
+            <target android:targetId="@+id/Login_password" />
+            <target android:targetId="@+id/Login_hostname" />
+            <target android:targetId="@+id/Login_username" />
+        </targets>
+    </changeBounds> -->
+
+
+</transitionSet>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+        <TextView
+            android:id="@+id/Service_ServiceNameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/module"
+            android:textAlignment="textStart"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Service_ServicePIDPID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pid_s"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Service_ServicePortPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/port_s"
+            android:textAlignment="textEnd"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/Services_scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Services_service1_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service1_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service1_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service1_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service1_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Services_service2_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service2_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service2_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service2_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service2_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Services_service3_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service3_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service3_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service3_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service3_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Services_service4_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service4_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service4_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service4_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service4_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Services_service5_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service5_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service5_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service5_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service5_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Services_service6_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service6_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service6_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service6_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service6_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Services_service7_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Services_service7_ServiceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Services_service7_ServiceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/please_wait"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Services_service7_PidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Services_service7_PortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

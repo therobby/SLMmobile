@@ -1,0 +1,140 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+    </style> -->
+
+    <style name="AppTheme" parent="lightDefault" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<style name="SettingsTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="android:panelBackground">@color/colorB</item>
+        <item name="android:windowBackground">@drawable/bslmbackground</item>
+        <item name="android:dialogTheme">@style/DialogStyle</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>-->
+
+    <!--<style name="Yellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccentSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorForeground">@color/colorForeground</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorAccentSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccentSecondary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:navigationBarColor">@color/colorNavButtons</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:title">@color/colorAccent</item>
+    </style>-->
+
+    <style name="DrawerIconStyle." parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <!--<style name="DialogStyle" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:colorAccent">@color/colorTextSecondaryInverse</item>
+        <item name="android:panelColorBackground">@color/colorB</item>
+        <item name="android:colorForeground">@color/colorB</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
+        <item name="android:textColorAlertDialogListItem">@color/colorPrimary</item>
+    </style>-->
+
+    <!--http://blog.supenta.com/2014/07/02/how-to-style-alertdialogs-like-a-pro/-->
+
+    <style name="DrawerIconStyle_lightDefault" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/softGray_navdrawer</item>
+    </style>
+
+    <style name="DrawerIconStyle_softRed" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/softRed_navdrawer</item>
+    </style>
+
+    <style name="DrawerIconStyle_softBlue" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/softBlue_navdrawer</item>
+    </style>
+
+    <style name="DrawerIconStyle_blackWhite" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/blackWhite_white</item>
+    </style>
+
+
+    <style name="lightDefault" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorForeground">@color/softGray_foreground</item>
+        <item name="android:colorBackground">@color/_background_material_light</item>
+        <item name="colorAccent">@color/_accent_material_light</item>
+        <item name="android:textColorLink">@color/textColorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle_lightDefault</item>
+    </style>
+
+    <style name="redSoft" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">@color/colorPrimaryDark_red</item>
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark_red</item>
+        <item name="android:textColorPrimary">@color/text_grey_dark</item>
+        <item name="android:textColorSecondary">@color/softRed_text_secondary</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle_softRed</item>
+        <item name="colorPrimary">@color/colorPrimaryDark_red</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_red</item>
+        <item name="android:colorForeground">@color/softRed_foreground</item>
+    </style>
+
+    <style name="blueSoft" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:textColorPrimary">@color/text_grey_dark</item>
+        <item name="android:textColorSecondary">@color/softBlue_text_secondary</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle_softBlue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:colorForeground">@color/softBlue_foreground</item>
+    </style>
+
+    <style name="whiteBlack" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@color/blackWhite_black</item>
+        <item name="colorAccent">@color/blackWhite_white</item>
+        <item name="android:statusBarColor">@color/blackWhite_black</item>
+        <item name="android:textColorPrimary">@color/blackWhite_white</item>
+        <item name="android:textColorSecondary">@color/blackWhite_white</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle_blackWhite</item>
+        <item name="colorPrimary">@color/blackWhite_black</item>
+        <item name="colorPrimaryDark">@color/blackWhite_black</item>
+        <item name="android:textColorTertiary">@color/blackWhite_white</item>
+        <item name="android:textColorPrimaryInverse">@color/blackWhite_white</item>
+        <item name="android:textColorHint">@color/blackWhite_white</item>
+        <item name="android:textColorHighlight">@color/blackWhite_white</item>
+        <item name="android:editTextColor">@color/blackWhite_white</item>
+        <item name="android:actionMenuTextColor">@color/blackWhite_white</item>
+
+        <item name="android:title">@color/blackWhite_black</item>
+        <item name="android:keyTextColor">@color/blackWhite_white</item>
+        <item name="android:textColorLink">@color/blackWhite_white</item>
+        <item name="android:colorButtonNormal">@color/blackWhite_foreground</item>
+        <item name="android:colorForeground">@color/blackWhite_foreground</item>
+        <item name="android:colorBackground">@color/blackWhite_background</item>
+    </style>
+</resources>

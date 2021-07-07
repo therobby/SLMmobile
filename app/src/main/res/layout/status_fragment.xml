@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Status_Window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contextClickable="true"
+        android:fillViewport="false"
+        android:isScrollContainer="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+        tools:targetApi="m">
+
+        <LinearLayout
+            android:id="@+id/Status_scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Status_UptimeLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="99dp">
+
+                <TextView
+                    android:id="@+id/Status_Uptime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/uptime"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="48dp"
+                    tools:layout_editor_absoluteY="123dp" />
+
+                <TextView
+                    android:id="@+id/Status_UptimeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="268dp"
+                    tools:layout_editor_absoluteY="113dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_HostnameLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="30dp">
+
+                <TextView
+                    android:id="@+id/Status_Hostname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/hostname"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="68dp" />
+
+                <TextView
+                    android:id="@+id/Status_HostameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:typeface="normal"
+                    tools:layout_editor_absoluteX="222dp"
+                    tools:layout_editor_absoluteY="68dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_UnameLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Status_UptimeLinearLayout"
+                tools:layout_editor_absoluteX="106dp"
+                tools:layout_editor_absoluteY="153dp">
+
+                <TextView
+                    android:id="@+id/Status_Uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/uname"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="64dp"
+                    tools:layout_editor_absoluteY="223dp" />
+
+                <TextView
+                    android:id="@+id/Status_UnameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="200dp"
+                    tools:layout_editor_absoluteY="223dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_CPULinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Status_UnameLinearLayout"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="211dp">
+
+                <TextView
+                    android:id="@+id/Status_CPU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/cpu"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Status_CPUView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_CPUUsageLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Status_CPULinearLayout"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="291dp">
+
+                <TextView
+                    android:id="@+id/Status_CPUUsage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/cpu_usage"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Status_CPUUsageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/Status_CPUProgressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/status_progressbar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_RAMLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Status_RAM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/ram"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Status_RAMView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/Status_RAMProgressBar"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:max="20"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/status_progressbar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_OSLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="122dp"
+                tools:layout_editor_absoluteY="424dp">
+
+                <TextView
+                    android:id="@+id/Status_OS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/os"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Status_OSView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_VirtualizedLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="75dp"
+                tools:layout_editor_absoluteY="502dp">
+
+                <TextView
+                    android:id="@+id/Status_Virtualized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/virtualized"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Status_VirtualizedView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/please_wait"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Status_UpdatesLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="75dp"
+                tools:layout_editor_absoluteY="502dp">
+
+                <TextView
+                    android:id="@+id/Status_Updates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/updates"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Status_UpdatesView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="14sp"
+                    android:lines="1"
+                    android:paddingLeft="3dp"
+                    android:text="@string/tap_to_update"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
